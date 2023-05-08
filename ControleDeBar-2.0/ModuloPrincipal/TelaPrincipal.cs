@@ -1,9 +1,4 @@
-﻿using ControleDeBar.ConsoleApp.Compartilhado;
-using ControleDeBar.ConsoleApp.ModuloConta;
-using ControleDeBar.ConsoleApp.ModuloGarcom;
-using ControleDeBar.ConsoleApp.ModuloMesa;
-using ControleDeBar.ConsoleApp.ModuloProduto;
-using System.Collections;
+﻿using ControleDeBar.ConsoleApp.ModuloConta;
 
 namespace ControleDeBar.ConsoleApp.ModuloPrincipal
 {

@@ -1,12 +1,7 @@
-﻿using ControleDeBar.ConsoleApp.Compartilhado;
-using ControleDeBar.ConsoleApp.ModuloConta;
-using ControleDeBar.ConsoleApp.ModuloPrincipal;
-
-namespace ControleDeBar.ConsoleApp
+﻿namespace ControleDeBar.ConsoleApp
 {
     internal partial class Program
-    {
-
+    {     
         static void Main(string[] args)
         {
             TelaPrincipal telaPrincipal = new TelaPrincipal();

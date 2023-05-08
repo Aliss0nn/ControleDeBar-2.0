@@ -1,5 +1,4 @@
-﻿using ControleDeBar.ConsoleApp.Compartilhado;
-using System.Collections;
+﻿using System.Collections;
 
 namespace ControleDeBar.ConsoleApp.ModuloGarcom
 {

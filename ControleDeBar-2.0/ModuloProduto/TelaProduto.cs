@@ -1,7 +1,4 @@
-﻿using ControleDeBar.ConsoleApp.Compartilhado;
-using System.Collections;
-
-namespace ControleDeBar.ConsoleApp.ModuloProduto
+﻿namespace ControleDeBar.ConsoleApp.ModuloProduto
 {
     public class TelaProduto : TelaBase<RepositorioProduto, Produto>
     {
@@ -15,6 +12,8 @@ namespace ControleDeBar.ConsoleApp.ModuloProduto
 
         protected override void MostrarTabela(List<Produto> registros)
         {
+            registros.Sort((x, y) => y.id.CompareTo(x.id));                                                                          
+
             foreach (Produto produto in registros)
             {
                 Console.Write(produto.id + ", " + produto.nome + ", " + produto.preco);

@@ -69,7 +69,7 @@ namespace ControleDeBar.ConsoleApp.Compartilhado
         }
 
         public virtual void VisualizarRegistros(bool mostrarCabecalho)
-        {
+        {            
             if (mostrarCabecalho)
                 MostrarCabecalho($"Cadastro de {nomeEntidade}{sufixo}", "Visualizando registros já cadastrados...");
 

@@ -15,25 +15,12 @@ namespace ControleDeBar.ConsoleApp.Compartilhado
 
             listaRegistros.Add(registro);
         }
-
-        public virtual void Editar(int id, TEntidade registroAtualizado)
-        {
-            TEntidade registroSelecionado = SelecionarPorId(id);
-
-            registroSelecionado.AtualizarInformacoes(registroAtualizado);
-        }
-
+       
         public virtual void Editar(TEntidade registroSelecionado, TEntidade registroAtualizado)
         {
             registroSelecionado.AtualizarInformacoes(registroAtualizado);
         }
-
-        public virtual void Excluir(int id)
-        {
-            TEntidade registroSelecionado = SelecionarPorId(id);
-
-            listaRegistros.Remove(registroSelecionado);
-        }
+     
 
         public virtual void Excluir(TEntidade registroSelecionado)
         {
@@ -42,18 +29,7 @@ namespace ControleDeBar.ConsoleApp.Compartilhado
 
         public virtual TEntidade SelecionarPorId(int id)
         {
-            TEntidade registroSelecionado = null;
-
-            foreach (TEntidade registro in listaRegistros)
-            {
-                if (registro.id == id)
-                {
-                    registroSelecionado = registro;
-                    break;
-                }
-            }
-
-            return registroSelecionado;
+            return listaRegistros.Find(registro => registro.id == id);           
         }
 
         public virtual List<TEntidade> SelecionarTodos()

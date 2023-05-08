@@ -1,7 +1,4 @@
-﻿using ControleDeBar.ConsoleApp.Compartilhado;
-using System.Collections;
-
-namespace ControleDeBar.ConsoleApp.ModuloConta
+﻿namespace ControleDeBar.ConsoleApp.ModuloConta
 {
     public class RepositorioConta : RepositorioBase<Conta>
     {
@@ -12,28 +9,12 @@ namespace ControleDeBar.ConsoleApp.ModuloConta
 
         public List<Conta> SelecionarContasEmAberto()
         {
-            List<Conta> contasEmAberto = new List<Conta>();
-
-            foreach (Conta conta in listaRegistros)
-            {
-                if (conta.estaAberta)
-                    contasEmAberto.Add(conta);
-            }
-
-            return contasEmAberto;
+            return listaRegistros.FindAll(conta => conta.estaAberta);        
         }
 
         public List<Conta> SelecionarContasFechadas(DateTime data)
         {
-            List<Conta> contasEmAberto = new List<Conta>();
-
-            foreach (Conta conta in listaRegistros)
-            {
-                if (conta.estaAberta == false && conta.data.Date == data.Date)
-                    contasEmAberto.Add(conta);
-            }
-
-            return contasEmAberto;
+            return listaRegistros.FindAll(c => c.estaAberta == false && c.data.Date == data.Date);          
         }
     }
 }

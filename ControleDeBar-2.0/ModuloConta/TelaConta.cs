@@ -1,9 +1,4 @@
-﻿using ControleDeBar.ConsoleApp.Compartilhado;
-using ControleDeBar.ConsoleApp.ModuloGarcom;
-using ControleDeBar.ConsoleApp.ModuloMesa;
-using ControleDeBar.ConsoleApp.ModuloProduto;
-
-namespace ControleDeBar.ConsoleApp.ModuloConta
+﻿namespace ControleDeBar.ConsoleApp.ModuloConta
 {
     public class TelaConta : TelaBase<RepositorioConta, Conta>
     {

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-
-namespace ControleDeBar.ConsoleApp.ModuloConta
+﻿namespace ControleDeBar.ConsoleApp.ModuloConta
 {
     public class FaturamentoDiario
     {

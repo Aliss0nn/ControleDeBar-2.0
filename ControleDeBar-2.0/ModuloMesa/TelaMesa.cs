@@ -1,8 +1,4 @@
-﻿using ControleDeBar.ConsoleApp.Compartilhado;
-using ControleDeBar.ConsoleApp.ModuloGarcom;
-using System.Collections;
-
-namespace ControleDeBar.ConsoleApp.ModuloMesa
+﻿namespace ControleDeBar.ConsoleApp.ModuloMesa
 {
     public class TelaMesa : TelaBase<RepositorioMesa, Mesa>
     {
