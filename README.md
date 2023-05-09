@@ -4,4 +4,5 @@ O Sr. João do Nascimento, proprietário do Bar da Galera, precisa controlar mel
 
 ![image (1)](https://github.com/Aliss0nn/ControleDeBar-2.0/assets/127152046/5bcd1daa-2a74-4a9b-9eb2-2ec647639c3a)
 
-https://images.emojiterra.com/google/noto-emoji/unicode-15/animated/1f37b.gif
+
+![1f37b](https://github.com/Aliss0nn/ControleDeBar-2.0/assets/127152046/cea4c50f-e98d-4dea-acca-16d3fe4885d8)
